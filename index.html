@@ -1,0 +1,47 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+      <style>
+        body {
+          background-image: url("img/daun.gif");
+          background-repeat: repeat;
+          background-position: center;
+        }
+        #image {
+          display: flex;
+          width: 150px;
+          height: 150px;
+          flex-flow: row-reverse;
+        }
+  
+        .header {
+          text-align: center;
+          margin-bottom: 45px;
+        }
+      </style>
+      <title>lampu</title>
+    </head>
+    <body>
+      <div class="header">
+        <h1>how to turn on and off lights</h1>
+      </div>
+      <div class="card shadow-lg m-auto" style="width: 18rem; border: 1px solid rgb(75, 69, 69); background-color: darkgray;">
+        <div class="card-body text-center">
+          <button id="on" onclick="document.getElementById('image').src='./img/on.svg'" class="btn btn-primary rounded">Turn ON</button>
+          <div class="img">
+            <img id="image" src="./img/off.svg" alt="lampu" />
+          </div>
+          <button id="on" onclick="document.getElementById('image').src='./img/off.svg'" class="btn btn-danger rounded mt-4">Turn OFF</button>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+  </html>
+</html>
